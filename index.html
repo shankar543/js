@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Methods Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="tabs">
+        <div class="tab" data-tab="strings">String Methods</div>
+        <div class="tab" data-tab="arrays">Array Methods</div>
+        <div class="tab" data-tab="objects">Object Methods</div>
+    </div>
+    <div class="content">
+        <div class="card-container" id="strings">
+            <div class="card">
+                <h2>trim()</h2>
+                <p><strong>Description:</strong> Removes whitespace from both ends of a string.</p>
+                <p><strong>Example:</strong> <code>"  Hello  ".trim()</code></p>
+                <p><strong>Result:</strong> <code>"Hello"</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>toLowerCase()</h2>
+                <p><strong>Description:</strong> Converts all characters to lowercase.</p>
+                <p><strong>Example:</strong> <code>"Hello World".toLowerCase()</code></p>
+                <p><strong>Result:</strong> <code>"hello world"</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>toUpperCase()</h2>
+                <p><strong>Description:</strong> Converts all characters to uppercase.</p>
+                <p><strong>Example:</strong> <code>"Hello World".toUpperCase()</code></p>
+                <p><strong>Result:</strong> <code>"HELLO WORLD"</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>charAt()</h2>
+                <p><strong>Description:</strong> Returns the character at a specified index.</p>
+                <p><strong>Example:</strong> <code>"Hello".charAt(1)</code></p>
+                <p><strong>Result:</strong> <code>"e"</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>charCodeAt()</h2>
+                <p><strong>Description:</strong> Returns the Unicode value of the character at a specified index.</p>
+                <p><strong>Example:</strong> <code>"Hello".charCodeAt(1)</code></p>
+                <p><strong>Result:</strong> <code>101</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>concat()</h2>
+                <p><strong>Description:</strong> Combines two or more strings.</p>
+                <p><strong>Example:</strong> <code>"Hello".concat(" ", "World")</code></p>
+                <p><strong>Result:</strong> <code>"Hello World"</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>includes()</h2>
+                <p><strong>Description:</strong> Checks if a string contains a specified substring.</p>
+                <p><strong>Example:</strong> <code>"Hello World".includes("World")</code></p>
+                <p><strong>Result:</strong> <code>true</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>indexOf()</h2>
+                <p><strong>Description:</strong> Returns the index of the first occurrence of a specified substring.</p>
+                <p><strong>Example:</strong> <code>"Hello World".indexOf("World")</code></p>
+                <p><strong>Result:</strong> <code>6</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>lastIndexOf()</h2>
+                <p><strong>Description:</strong> Returns the index of the last occurrence of a specified substring.</p>
+                <p><strong>Example:</strong> <code>"Hello Hello".lastIndexOf("Hello")</code></p>
+                <p><strong>Result:</strong> <code>6</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>match()</h2>
+                <p><strong>Description:</strong> Retrieves the matches of a string against a regular expression.</p>
+                <p><strong>Example:</strong> <code>"Hello 123".match(/\d+/)</code></p>
+                <p><strong>Result:</strong> <code>["123"]</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>replace()</h2>
+                <p><strong>Description:</strong> Replaces occurrences of a substring with a new substring.</p>
+                <p><strong>Example:</strong> <code>"Hello World".replace("World", "Universe")</code></p>
+                <p><strong>Result:</strong> <code>"Hello Universe"</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>search()</h2>
+                <p><strong>Description:</strong> Searches for a match between a string and a regular expression.</p>
+                <p><strong>Example:</strong> <code>"Hello World".search(/World/)</code></p>
+                <p><strong>Result:</strong> <code>6</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>slice()</h2>
+                <p><strong>Description:</strong> Extracts a portion of a string between two indices.</p>
+                <p><strong>Example:</strong> <code>"Hello World".slice(0, 5)</code></p>
+                <p><strong>Result:</strong> <code>"Hello"</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>split()</h2>
+                <p><strong>Description:</strong> Splits a string into an array of substrings based on a delimiter.</p>
+                <p><strong>Example:</strong> <code>"Hello World".split(" ")</code></p>
+                <p><strong>Result:</strong> <code>["Hello", "World"]</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>substr()</h2>
+                <p><strong>Description:</strong> Returns a specified number of characters from a string, starting at a specified index.</p>
+                <p><strong>Example:</strong> <code>"Hello World".substr(6, 5)</code></p>
+                <p><strong>Result:</strong> <code>"World"</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>substring()</h2>
+                <p><strong>Description:</strong> Extracts characters from a string between two indices.</p>
+                <p><strong>Example:</strong> <code>"Hello World".substring(6, 11)</code></p>
+                <p><strong>Result:</strong> <code>"World"</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>repeat()</h2>
+                <p><strong>Description:</strong> Returns a new string with a specified number of copies of the original string.</p>
+                <p><strong>Example:</strong> <code>"Hello".repeat(3)</code></p>
+                <p><strong>Result:</strong> <code>"HelloHelloHello"</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>startsWith()</h2>
+                <p><strong>Description:</strong> Checks if a string starts with a specified substring.</p>
+                <p><strong>Example:</strong> <code>"Hello World".startsWith("Hello")</code></p>
+                <p><strong>Result:</strong> <code>true</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>endsWith()</h2>
+                <p><strong>Description:</strong> Checks if a string ends with a specified substring.</p>
+                <p><strong>Example:</strong> <code>"Hello World".endsWith("World")</code></p>
+                <p><strong>Result:</strong> <code>true</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>trimStart()</h2>
+                <p><strong>Description:</strong> Removes whitespace from the beginning of a string.</p>
+                <p><strong>Example:</strong> <code>"  Hello  ".trimStart()</code></p>
+                <p><strong>Result:</strong> <code>"Hello  "</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>trimEnd()</h2>
+                <p><strong>Description:</strong> Removes whitespace from the end of a string.</p>
+                <p><strong>Example:</strong> <code>"  Hello  ".trimEnd()</code></p>
+                <p><strong>Result:</strong> <code>"  Hello"</code></p>
+            </div>
+            
+            <!-- Add more cards as needed -->
+        </div>
+        <div class="card-container" id="arrays" style="display: none;">
+            <div class="card">
+                <h2>push()</h2>
+                <p><strong>Description:</strong> Adds one or more elements to the end of an array.</p>
+                <p><strong>Example:</strong> <code>[1, 2].push(3)</code></p>
+                <p><strong>Result:</strong> <code>[1, 2, 3]</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>pop()</h2>
+                <p><strong>Description:</strong> Removes the last element from an array.</p>
+                <p><strong>Example:</strong> <code>[1, 2, 3].pop()</code></p>
+                <p><strong>Result:</strong> <code>3</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>shift()</h2>
+                <p><strong>Description:</strong> Removes the first element from an array.</p>
+                <p><strong>Example:</strong> <code>[1, 2, 3].shift()</code></p>
+                <p><strong>Result:</strong> <code>1</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>unshift()</h2>
+                <p><strong>Description:</strong> Adds one or more elements to the beginning of an array.</p>
+                <p><strong>Example:</strong> <code>[1, 2].unshift(0)</code></p>
+                <p><strong>Result:</strong> <code>[0, 1, 2]</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>concat()</h2>
+                <p><strong>Description:</strong> Combines two or more arrays into a new array.</p>
+                <p><strong>Example:</strong> <code>[1, 2].concat([3, 4])</code></p>
+                <p><strong>Result:</strong> <code>[1, 2, 3, 4]</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>join()</h2>
+                <p><strong>Description:</strong> Joins all elements of an array into a string.</p>
+                <p><strong>Example:</strong> <code>[1, 2, 3].join('-')</code></p>
+                <p><strong>Result:</strong> <code>"1-2-3"</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>slice()</h2>
+                <p><strong>Description:</strong> Extracts a section of an array and returns it as a new array.</p>
+                <p><strong>Example:</strong> <code>[1, 2, 3, 4].slice(1, 3)</code></p>
+                <p><strong>Result:</strong> <code>[2, 3]</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>splice()</h2>
+                <p><strong>Description:</strong> Adds or removes elements from an array at a specified index.</p>
+                <p><strong>Example:</strong> <code>[1, 2, 3].splice(1, 1, 4, 5)</code></p>
+                <p><strong>Result:</strong> <code>[1, 4, 5, 3]</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>sort()</h2>
+                <p><strong>Description:</strong> Sorts the elements of an array in place.</p>
+                <p><strong>Example:</strong> <code>[3, 1, 2].sort()</code></p>
+                <p><strong>Result:</strong> <code>[1, 2, 3]</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>reverse()</h2>
+                <p><strong>Description:</strong> Reverses the order of elements in an array.</p>
+                <p><strong>Example:</strong> <code>[1, 2, 3].reverse()</code></p>
+                <p><strong>Result:</strong> <code>[3, 2, 1]</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>forEach()</h2>
+                <p><strong>Description:</strong> Executes a provided function once for each array element.</p>
+                <p><strong>Example:</strong> <code>[1, 2, 3].forEach(el => console.log(el))</code></p>
+                <p><strong>Result:</strong> <code>1</code>, <code>2</code>, <code>3</code> (printed to the console)</p>
+            </div>
+            
+            <div class="card">
+                <h2>map()</h2>
+                <p><strong>Description:</strong> Creates a new array with the results of calling a function on every element.</p>
+                <p><strong>Example:</strong> <code>[1, 2, 3].map(el => el * 2)</code></p>
+                <p><strong>Result:</strong> <code>[2, 4, 6]</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>filter()</h2>
+                <p><strong>Description:</strong> Creates a new array with all elements that pass a test.</p>
+                <p><strong>Example:</strong> <code>[1, 2, 3].filter(el => el > 1)</code></p>
+                <p><strong>Result:</strong> <code>[2, 3]</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>reduce()</h2>
+                <p><strong>Description:</strong> Applies a function against an accumulator and each element in the array to reduce it to a single value.</p>
+                <p><strong>Example:</strong> <code>[1, 2, 3].reduce((acc, val) => acc + val, 0)</code></p>
+                <p><strong>Result:</strong> <code>6</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>find()</h2>
+                <p><strong>Description:</strong> Returns the first element that satisfies a provided testing function.</p>
+                <p><strong>Example:</strong> <code>[1, 2, 3].find(el => el > 1)</code></p>
+                <p><strong>Result:</strong> <code>2</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>findIndex()</h2>
+                <p><strong>Description:</strong> Returns the index of the first element that satisfies a provided testing function.</p>
+                <p><strong>Example:</strong> <code>[1, 2, 3].findIndex(el => el > 1)</code></p>
+                <p><strong>Result:</strong> <code>1</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>some()</h2>
+                <p><strong>Description:</strong> Tests whether at least one element in the array passes the test implemented by the provided function.</p>
+                <p><strong>Example:</strong> <code>[1, 2, 3].some(el => el > 2)</code></p>
+                <p><strong>Result:</strong> <code>true</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>every()</h2>
+                <p><strong>Description:</strong> Tests whether all elements in the array pass the test implemented by the provided function.</p>
+                <p><strong>Example:</strong> <code>[1, 2, 3].every(el => el > 0)</code></p>
+                <p><strong>Result:</strong> <code>true</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>includes()</h2>
+                <p><strong>Description:</strong> Determines whether an array includes a certain value among its entries.</p>
+                <p><strong>Example:</strong> <code>[1, 2, 3].includes(2)</code></p>
+                <p><strong>Result:</strong> <code>true</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>toString()</h2>
+                <p><strong>Description:</strong> Returns a string representing the array.</p>
+                <p><strong>Example:</strong> <code>[1, 2, 3].toString()</code></p>
+                <p><strong>Result:</strong> <code>"1,2,3"</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>copyWithin()</h2>
+                <p><strong>Description:</strong> Shallow copies part of an array to another location in the same array and returns it without modifying its length.</p>
+                <p><strong>Example:</strong> <code>[1, 2, 3, 4].copyWithin(0, 2)</code></p>
+                <p><strong>Result:</strong> <code>[3, 4, 3, 4]</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>fill()</h2>
+                <p><strong>Description:</strong> Changes all elements in an array to a static value from a start index (default is 0) to an end index (default is array.length).</p>
+                <p><strong>Example:</strong> <code>[1, 2, 3].fill(0, 1, 2)</code></p>
+                <p><strong>Result:</strong> <code>[1, 0, 3]</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>flat()</h2>
+                <p><strong>Description:</strong> Creates a new array with all sub-array elements concatenated into it recursively up to the specified depth.</p>
+                <p><strong>Example:</strong> <code>[1, [2, [3, [4]]]].flat(2)</code></p>
+                <p><strong>Result:</strong> <code>[1, 2, 3, [4]]</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>flatMap()</h2>
+                <p><strong>Description:</strong> First maps each element using a mapping function, then flattens the result into a new array.</p>
+                <p><strong>Example:</strong> <code>[1, 2, 3].flatMap(x => [x, x * 2])</code></p>
+                <p><strong>Result:</strong> <code>[1, 2, 2, 4, 3, 6]</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>from()</h2>
+                <p><strong>Description:</strong> Creates a new array instance from an array-like or iterable object.</p>
+                <p><strong>Example:</strong> <code>Array.from('foo')</code></p>
+                <p><strong>Result:</strong> <code>["f", "o", "o"]</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>isArray()</h2>
+                <p><strong>Description:</strong> Determines whether the passed value is an array.</p>
+                <p><strong>Example:</strong> <code>Array.isArray([1, 2])</code></p>
+                <p><strong>Result:</strong> <code>true</code></p>
+            </div>
+            
+            <!-- Add more cards as needed -->
+        </div>
+        <div class="card-container" id="objects" style="display: none;">
+            <div class="card">
+                <h2>keys()</h2>
+                <p><strong>Description:</strong> Returns an array of a given object's own enumerable property names.</p>
+                <p><strong>Example:</strong> <code>Object.keys({a: 1, b: 2})</code></p>
+                <p><strong>Result:</strong> <code>["a", "b"]</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>values()</h2>
+                <p><strong>Description:</strong> Returns an array of a given object's own enumerable property values.</p>
+                <p><strong>Example:</strong> <code>Object.values({a: 1, b: 2})</code></p>
+                <p><strong>Result:</strong> <code>[1, 2]</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>entries()</h2>
+                <p><strong>Description:</strong> Returns an array of a given object's own enumerable property [key, value] pairs.</p>
+                <p><strong>Example:</strong> <code>Object.entries({a: 1, b: 2})</code></p>
+                <p><strong>Result:</strong> <code>[["a", 1], ["b", 2]]</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>assign()</h2>
+                <p><strong>Description:</strong> Copies the values of all enumerable own properties from one or more source objects to a target object.</p>
+                <p><strong>Example:</strong> <code>Object.assign({a: 1}, {b: 2})</code></p>
+                <p><strong>Result:</strong> <code>{a: 1, b: 2}</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>freeze()</h2>
+                <p><strong>Description:</strong> Freezes an object, preventing new properties from being added, and marking all existing properties as read-only.</p>
+                <p><strong>Example:</strong> <code>Object.freeze({a: 1})</code></p>
+                <p><strong>Result:</strong> <code>{a: 1}</code> (but properties cannot be modified or deleted)</p>
+            </div>
+            
+            <div class="card">
+                <h2>seal()</h2>
+                <p><strong>Description:</strong> Seals an object, preventing new properties from being added and marking all existing properties as non-configurable.</p>
+                <p><strong>Example:</strong> <code>Object.seal({a: 1})</code></p>
+                <p><strong>Result:</strong> <code>{a: 1}</code> (but existing properties can be modified)</p>
+            </div>
+            
+            <div class="card">
+                <h2>getPrototypeOf()</h2>
+                <p><strong>Description:</strong> Returns the prototype (i.e., the internal [[Prototype]] property) of the specified object.</p>
+                <p><strong>Example:</strong> <code>Object.getPrototypeOf({})</code></p>
+                <p><strong>Result:</strong> <code>{}</code> (the prototype object)</p>
+            </div>
+            
+            <div class="card">
+                <h2>setPrototypeOf()</h2>
+                <p><strong>Description:</strong> Sets the prototype (i.e., the internal [[Prototype]] property) of a specified object.</p>
+                <p><strong>Example:</strong> <code>Object.setPrototypeOf({}, Object.prototype)</code></p>
+                <p><strong>Result:</strong> The specified object with a new prototype.</p>
+            </div>
+            
+            <div class="card">
+                <h2>create()</h2>
+                <p><strong>Description:</strong> Creates a new object with the specified prototype object and properties.</p>
+                <p><strong>Example:</strong> <code>Object.create({a: 1})</code></p>
+                <p><strong>Result:</strong> <code>{}</code> (with prototype {a: 1})</p>
+            </div>
+            
+            <div class="card">
+                <h2>is()</h2>
+                <p><strong>Description:</strong> Determines whether two values are the same value.</p>
+                <p><strong>Example:</strong> <code>Object.is('foo', 'foo')</code></p>
+                <p><strong>Result:</strong> <code>true</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>hasOwnProperty()</h2>
+                <p><strong>Description:</strong> Returns a boolean indicating whether the object has the specified property as its own property.</p>
+                <p><strong>Example:</strong> <code>({a: 1}).hasOwnProperty('a')</code></p>
+                <p><strong>Result:</strong> <code>true</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>defineProperty()</h2>
+                <p><strong>Description:</strong> Adds a property to an object, or modifies an existing property on an object, and returns the object.</p>
+                <p><strong>Example:</strong> <code>Object.defineProperty({}, 'a', {value: 1})</code></p>
+                <p><strong>Result:</strong> <code>{a: 1}</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>defineProperties()</h2>
+                <p><strong>Description:</strong> Adds multiple properties to an object, or modifies existing properties on an object, and returns the object.</p>
+                <p><strong>Example:</strong> <code>Object.defineProperties({}, {a: {value: 1}, b: {value: 2}})</code></p>
+                <p><strong>Result:</strong> <code>{a: 1, b: 2}</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>getOwnPropertyDescriptor()</h2>
+                <p><strong>Description:</strong> Returns a property descriptor for a named property of an object.</p>
+                <p><strong>Example:</strong> <code>Object.getOwnPropertyDescriptor({a: 1}, 'a')</code></p>
+                <p><strong>Result:</strong> <code>{value: 1, writable: true, enumerable: true, configurable: true}</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>getOwnPropertyDescriptors()</h2>
+                <p><strong>Description:</strong> Returns an object describing the properties of a given object.</p>
+                <p><strong>Example:</strong> <code>Object.getOwnPropertyDescriptors({a: 1})</code></p>
+                <p><strong>Result:</strong> <code>{a: {value: 1, writable: true, enumerable: true, configurable: true}}</code></p>
+            </div>
+            
+            <div class="card">
+                <h2>prototype</h2>
+                <p><strong>Description:</strong> The prototype property allows you to add new properties and methods to a constructor function.</p>
+                <p><strong>Example:</strong> <code>function Person() {} Person.prototype.sayHello = function() { return 'Hello'; }</code></p>
+                <p><strong>Result:</strong> <code>Person objects will now have a sayHello method.</code></p>
+            </div>
+            
+            <!-- Add more cards as needed -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
